@@ -1,0 +1,23 @@
+<h2>Consultants List</h2>
+<button (click)="restUserData.getAllDriverDetails()">get Users</button>
+<table>
+  <tr>
+    <th>ID</th> 
+    <th>Profile</th>
+    <!-- <th>Actions</th> -->
+  </tr>
+  <!-- <h2>hellooooooo</h2> -->
+  <tr *ngFor="let consultant of restUserData.usersdata">
+     <td>{{ consultant.consultantId }}</td>
+    <!-- <td>{{ consultant.username }}</td>
+    <td>{{ consultant.phone }}</td>
+    <td>{{ consultant.email }}</td>  -->
+    <td>{{ consultant.profileInfo }}</td>
+    <!-- <td><button mat-button [routerLink]="['/update', consultant.consultantId]" class="nav-button">Update</button></td> -->
+    
+
+    
+  </tr>
+</table>
+<!-- <button (click)="getConsultants()"></button> -->
+<!-- <button (click)="navigateToUpdatePage(consultant.id)">Update<button></button> -->

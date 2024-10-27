@@ -1,0 +1,47 @@
+<p>update works!</p>
+
+<form #updatecustomer="ngForm" (ngSubmit)="restUserData.updateDriverFromFORM(updatecustomer)">
+
+    <label >consultantId</label>
+    <input type="number" name="consultantId" ngModel>
+    <br>
+
+    <label >userId</label>
+    <input type="number" name="userId" ngModel>
+    <br>
+
+    <label >rating</label>
+    <input type="number" name="rating" ngModel>
+    <br>
+
+    <label >totalProjects</label>
+    <input type="number" name="totalProjects" ngModel>
+    <br>
+
+    <label >profileInfo</label>
+    <input type="text" name="profileInfo" ngModel>
+    <br>
+
+    <label >createdAt</label>
+    <input type="datetime" name="createdAt" ngModel>
+    <br>
+
+     
+
+    <!-- <label >Driver Name</label>
+    <input type="text" name="driverName" ngModel>
+    <br>
+
+    <label >Driver Phone Number</label>
+    <input type="number" name="driverPhoneNumber" ngModel>
+    <br>
+
+    <label >Driver Vehicle Number</label>
+    <input type="text" name="driverVehicleNumber" ngModel>
+    <br> -->
+
+    <button type="submit">UPDATE</button>
+
+</form>
+
+
