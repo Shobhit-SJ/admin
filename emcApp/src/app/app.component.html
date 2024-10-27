@@ -1,0 +1,27 @@
+<!-- <app-admin></app-admin> -->
+
+<h3>Admin Dashboard</h3>
+<mat-toolbar color="primary">
+  <span>Consultant Management</span>
+  <div class="spacer"></div>
+  <button mat-button routerLink="/list" class="nav-button">Show Consultants</button>
+  <button mat-button routerLink="/add" class="nav-button">Add Consultant</button>
+  <button mat-button routerLink="/delete" class="nav-button">Delete Consultant</button>
+  <button mat-button routerLink="/update" class="nav-button">Update</button>
+  <button mat-button routerLink="/clients" class="nav-button">Client</button>
+
+
+  <!-- <td><button mat-button [routerLink]="['/update', consultant.id]" class="nav-button">Update</button></td> -->
+</mat-toolbar>
+
+<!-- New Nominate for Rewards Button -->
+<div class="nominate-container" *ngIf="isHomePage()">
+  <button mat-button routerLink="/rewards" class="nominate-button">Nominate for Rewards</button>
+</div>
+
+<router-outlet></router-outlet>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <p>Project Name: EMC Ease my Consultant © 2024</p>
+</footer>

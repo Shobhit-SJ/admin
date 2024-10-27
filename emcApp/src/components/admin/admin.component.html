@@ -1,0 +1,138 @@
+<h2>Consultants List</h2>
+
+<button (click)="restUserData.getAllDriverDetails()">get Users</button>
+
+<table border="1">
+    <tr>
+        <!-- <th>Driver id</th>
+        <th>Driver Name</th>
+        <th>driver Phone Number</th> -->
+        <th>driver VehicleNumber</th>
+        <!-- <th>categories</th>
+        <th>categories</th>
+        <th>image</th> -->
+        
+
+    </tr>
+    <tr *ngFor="let p of restUserData.usersdata ">
+        <!-- <td> {{p.driverUserId}} </td>
+        <td> {{p.driverName}} </td>
+        <td> {{p.driverPhoneNumber}} </td> -->
+        <td> {{p.profileInfo}} </td>
+        <!-- <td> {{p.description}} </td>
+        <td> {{p.category}} </td>  
+        <td> {{p.image}} </td>
+        <td> {{p.rating}} </td>
+        <td> {{p.rating.rate}} </td>
+        <td> {{p.rating.count}} </td> -->
+    </tr>
+</table> 
+
+
+
+
+
+<!-- add consultant -->
+<br>
+<hr/>
+<br>
+
+<form #addcustomer="ngForm" (ngSubmit)="restUserData.addCnsultantFromFORMProfileinfo(addcustomer)">
+
+    <label >Profile Info</label>
+    <input type="text" name="profileInfo" ngModel/>
+    <br>
+
+    <!-- <label >Driver Name</label>
+    <input type="text" name="driverName" ngModel>
+    <br>
+
+    <label >Driver Phone Number</label>
+    <input type="number" name="driverPhoneNumber" ngModel>
+    <br>
+
+    <label >Driver Vehicle Number</label>
+    <input type="text" name="driverVehicleNumber" ngModel>
+    <br> -->
+
+    <button type="submit">ADD</button>
+
+</form>
+
+<br>
+<hr/>
+<br>
+
+<!-- <table>
+  <tr>
+    <th>Username</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Profile</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let consultant of restUserData.usersdata"> -->
+    <!-- <td>{{ consultant.username }}</td>
+    <td>{{ consultant.phone }}</td>
+    <td>{{ consultant.email }}</td> -->
+    <!-- <td>{{ consultant.profile_info }}</td>
+    <td>
+      <button (click)="restUserData.delDetails(consultant.id)">Delete</button> -->
+      <!--<button [routerLink]="['/Update', consultant.id]">Update</button>
+      <button (click)="nominateForReward(consultant)">Nominate for Reward</button>-->
+    <!-- </td>
+  </tr>
+</table> -->
+
+
+
+
+
+<!-- <div class="form-container">
+    <mat-card>
+      <mat-card-title>Consultant Registration Form</mat-card-title>
+      <mat-card-content>
+        <form #addcustomer="ngForm" (ngSubmit)="restUserData.addDriverFromFORM(addcustomer)" novalidate>
+          <mat-form-field appearance="fill">
+            <mat-label>Username</mat-label>
+            <input matInput type="text" name="username" ngModel required />
+            <mat-error *ngIf="addcustomer.controls['username']?.invalid">Username is required</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Phone Number</mat-label>
+            <input matInput type="tel" name="phone" ngModel required 
+                   (input)="filterPhoneNumber($event)" maxlength="10" />
+            <mat-error *ngIf="addcustomer.controls['phone']?.invalid && addcustomer.controls['phone']?.errors?.required">
+              Phone number is required.
+            </mat-error>
+            <mat-error *ngIf="addcustomer.controls['phone']?.invalid && addcustomer.controls['phone']?.errors?.pattern">
+              Phone number must be numeric.
+            </mat-error>
+            <mat-error *ngIf="addcustomer.controls['phone']?.invalid && addcustomer.controls['phone']?.errors?.minlength">
+              Phone number must be exactly 10 digits long.
+            </mat-error>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Email Id:</mat-label>
+            <input matInput type="email" name="email" ngModel required />
+            <mat-error *ngIf="addcustomer.controls['email']?.invalid">Email is required</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" name="password" ngModel required />
+            <mat-error *ngIf="addcustomer.controls['password']?.invalid">Password is required</mat-error>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>Profile Info:</mat-label>
+            <input matInput type="text" name="profile" ngModel />
+          </mat-form-field>
+  
+          <button mat-raised-button type="submit" [disabled]="addcustomer.invalid">Submit</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div> -->
