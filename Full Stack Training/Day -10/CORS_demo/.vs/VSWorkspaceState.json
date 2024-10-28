@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CORS_demo",
+    "\\CORS_demo\\bin",
+    "\\CORS_demo\\bin\\Debug",
+    "\\CORS_demo\\Controllers",
+    "\\CORS_demo\\Models",
+    "\\CORS_demo\\Properties",
+    "\\CORS_demo\\Views",
+    "\\CORS_demo\\Views\\Home",
+    "\\CORS_demo\\Views\\Shared",
+    "\\CORS_demo\\wwwroot"
+  ],
+  "SelectedNode": "\\CORS_demo\\Controllers\\HomeController.cs",
+  "PreviewInSolutionExplorer": false
+}

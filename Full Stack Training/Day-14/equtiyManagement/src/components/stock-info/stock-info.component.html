@@ -1,0 +1,19 @@
+<h1>stock-info Table</h1>
+
+
+<table border = 1>
+    <tr *ngFor="let stock of stockList" ngClass="{{stock.stockQty * stock.currentPrice>stock.stockQty * stock.purchasePrice ? 'greenDiv' : 'redDiv'}}" >
+        <td>{{stock.stockId}}</td>
+        <td>{{stock.stockName|uppercase}}</td>
+        <td>{{stock.stockSector}}</td>
+        <td>{{stock.stockQty}}</td>
+        <td>{{stock.purchasePrice}}</td>
+        <td>{{stock.currentPrice}}</td>
+        <td>investmentValue: {{stock.stockQty * stock.currentPrice}}</td>
+        <td>currentValue: {{stock.stockQty * stock.purchasePrice}}</td>
+        <td>Status: {{stock.stockQty * stock.currentPrice|profitLoss: stock.stockQty * stock.purchasePrice}}</td>
+
+    </tr>
+
+
+</table>

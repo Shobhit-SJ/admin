@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  myprofile:
+    image: myprofile
+    build:
+      context: myprofile
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production

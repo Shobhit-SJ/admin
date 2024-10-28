@@ -1,0 +1,41 @@
+﻿<h3>Products</h3>
+
+<button class="btn btn-primary" onclick="getProducts()" >Display Products</button>
+
+ 
+<table class="table table-bordered" id="tblptoducts""></table>
+
+<script>
+
+    function getProducts() 
+    {
+        var url = "https://fakestoreapi.com/products";
+
+        fetch(url).then(datatype => datatype.json())
+            .then(result => {
+                // alert('Success');
+                // console.log(result);
+
+
+                for (var i = 0; result.length; i++) {
+
+                    $("#tblptoducts").append("<tr><td>"
+                        + // result[i].id + "</td><td>" +
+                        result[i].title + "</td><td>" +
+                        result[i].price + "</td><td>" +
+                        result[i].description + "</td><td>" +
+                        result[i].category + "</td><td>" +
+                        result[i].image + "</td><td>" +
+                        //result[i].rating + "</td><td>" +
+                        result[i].rating.rate + "</td><td>" +
+                        result[i].rating.count + "</td></tr>")
+
+                }
+            }) 
+            // .catch(errDetails => {
+            //     alert('ERRORRRRRRRR !!!');
+            //     console.log(errDetails);
+            // })
+
+    }
+</script>

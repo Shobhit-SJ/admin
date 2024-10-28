@@ -1,0 +1,33 @@
+azure cloud Fundamentals-AZ900
+
+
+A cloud is a place  where we can find the all the IT services
+ eg: Virtual amcbines, Databases, IOT, AI, ML, Data Services, Networks, Security and 200 + such services
+
+
+some major providers - Microsft
+                     -Aamzon
+                     -google
+                     -IBM
+                     -HP
+                     -Oracle
+
+Types of cloud
+ Public Cloud - Available to publice via subscription (Credit Card)
+Private cloud - Dedicated hardware/service Available only to organization
+Hybrid cloud - mix of both above
+Communinity - Shared only by community members
+            only available to community like banks, insurance, travel, etc.
+
+types of cloud services
+SAAS- software as a services- buy the software services
+   like software for DataAnalytics, IOT operations, AI, ML, COMPUTE, 
+   programming Function app, logic app, event grid,otp app, mssg app service, etc....
+     (PUblic software)
+PAAS- Run your software on their hardware
+       services like App Services
+       (Public hardware)
+IAAS- infrastructure as a service
+   software + hardware
+  (private  and dedicated)
+ 

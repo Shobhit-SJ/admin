@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\MyFirstConsoleApp\MyFirstConsoleApp\bin\Debug\net7.0\MyFirstConsoleApp.exe
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\MyFirstConsoleApp\MyFirstConsoleApp\bin\Debug\net7.0\MyFirstConsoleApp.deps.json
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\MyFirstConsoleApp\MyFirstConsoleApp\bin\Debug\net7.0\MyFirstConsoleApp.runtimeconfig.json
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\MyFirstConsoleApp\MyFirstConsoleApp\bin\Debug\net7.0\MyFirstConsoleApp.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\MyFirstConsoleApp\MyFirstConsoleApp\bin\Debug\net7.0\MyFirstConsoleApp.pdb
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\MyFirstConsoleApp\MyFirstConsoleApp\obj\Debug\net7.0\MyFirstConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\MyFirstConsoleApp\MyFirstConsoleApp\obj\Debug\net7.0\MyFirstConsoleApp.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\MyFirstConsoleApp\MyFirstConsoleApp\obj\Debug\net7.0\MyFirstConsoleApp.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\MyFirstConsoleApp\MyFirstConsoleApp\obj\Debug\net7.0\MyFirstConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\MyFirstConsoleApp\MyFirstConsoleApp\obj\Debug\net7.0\MyFirstConsoleApp.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\MyFirstConsoleApp\MyFirstConsoleApp\obj\Debug\net7.0\refint\MyFirstConsoleApp.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\MyFirstConsoleApp\MyFirstConsoleApp\obj\Debug\net7.0\MyFirstConsoleApp.pdb
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\MyFirstConsoleApp\MyFirstConsoleApp\obj\Debug\net7.0\MyFirstConsoleApp.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\MyFirstConsoleApp\MyFirstConsoleApp\obj\Debug\net7.0\ref\MyFirstConsoleApp.dll

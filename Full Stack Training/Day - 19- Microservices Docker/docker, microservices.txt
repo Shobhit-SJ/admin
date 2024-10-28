@@ -1,0 +1,48 @@
+How do we create a microservices application?
+
+1. We need docker to installed an  running.   (https://docs.docker.com/desktop/install/windows-install/)
+2, we need to kmow the commands
+        
+             docker --version
+             docker images (show me the list of images on docker)
+             docker ps (show me the list of containers running)
+             docker build . (create a docker image of the application)
+             docker pull(nikhilshahdocker/imageName) 
+             docker push(nikhilshahdocker/imageName) push to repository
+             docker run -d -p 4455:8080 ourshoppinglist/our-shopping-list (name of the images) 
+
+-d means --->docker demon (docker environment)  -p   -->(portnumber)
+
+
+
+             docker stop name of the container (when  u run docker ps, the last column is the name of the container, it is a randon name)
+
+             this will just stop the container, to be accessed so you will not be able
+             to access it contaioner is still present in the memory
+
+             docker rm containerid (this will remove the docker container and free the memory) or do docker rm --force contanierid
+             docker -rmi imageid of you want to delete the docker image from your machine
+
+
+
+------------------------------------------------------
+1. installed docker extension
+2. create a new .net project (any project in any technology, language)
+      
+       dotnet new mvc --name firstmicroservice_shobhit     (command in vs code to make mvc)
+
+3.
+create your own image
+
+
+
+
+to add in dockerhub:
+
+
+docker tag firstmicroservice_shobhit:aqua shobhitjais/firstmicroservice_shobhit:aqua   (username/buildFilename)
+
+docker push shobhitjais/firstmicroservice_shobhit:aqua
+
+
+

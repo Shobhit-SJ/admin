@@ -1,0 +1,32 @@
+<div>
+    <form action="">
+        <!-- <input type="text" placeholder="Enter Username"> <br/> -->
+        <br>
+
+        <mat-form-field>
+            <mat-label>Username</mat-label>
+            <input matInput>
+          </mat-form-field> 
+          <br>
+
+          <mat-form-field>
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="hide() ? 'password' : 'text'" />
+            <button
+              mat-icon-button
+              matSuffix
+              (click)="clickEvent($event)"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide()"
+            >
+              <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+          <br>
+
+
+        <!-- <input type="text" placeholder="Enter Your Password"> <br/> -->
+        <button mat-flat-button color="primary">Login</button>
+        <button mat-flat-button color="primary">Reset</button>
+    </form>
+</div>

@@ -1,0 +1,14 @@
+<h1>users works!</h1>
+
+
+<button (click)="restUserData.getUsersDetails()">Show Users</button>
+
+<div *ngFor="let u of restUserData.usersdata">
+    <h3> ID: {{u.id}} </h3>
+    <h3> Name: {{u.name}} </h3>
+    <h3> Username: {{u.username}} </h3>
+    <h3> E-mail: {{u.email}} </h3>
+    <h3> City: {{u.address.city}} </h3>
+    <h3> Company Name: {{u.company.name}} , {{u.company.bs}} </h3>
+    <h3> catchPhrase: {{u.company.catchPhrase}} </h3>
+</div>

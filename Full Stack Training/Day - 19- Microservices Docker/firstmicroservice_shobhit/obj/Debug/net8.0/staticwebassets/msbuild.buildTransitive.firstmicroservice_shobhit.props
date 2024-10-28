@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\firstmicroservice_shobhit.props" />
+</Project>

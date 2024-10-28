@@ -1,0 +1,48 @@
+﻿@model firstWebApp.ModelS.Friend
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Friend</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FriendName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FriendName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FriendMobile)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FriendMobile)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FriendEmail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FriendEmail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FriendType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FriendType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SeriousFriend)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SeriousFriend)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.FriendId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

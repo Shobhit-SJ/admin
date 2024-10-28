@@ -1,0 +1,19 @@
+    Angular is used for creating SPA
+
+
+single paged application
+
+when users connects for the first time to server, server will send a single page (index.html)
+which will contain all the other pages (cpmponents)
+--by deafult - display app.component,html to user
+--app.component.html will have links to other components
+
+
+Home | About | Contact | History | Carrees | Login
+
+
+--users clicks on any of the link, UI will change on screen, but all the content will come within the browser
+and user does not go to server, as everything is included in index.html
+
+--user will go to server only when new data is needed (CRUD operation with REST API)
+--application will work even work even when user is disconnected

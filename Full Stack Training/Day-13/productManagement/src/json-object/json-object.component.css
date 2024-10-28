@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+    background-color: violet;
+}
+div{
+    background-color: pink;
+    color: rebeccapurple;
+    margin: auto;
+    border-radius: 10px;
+    border: 10px solid black;
+}

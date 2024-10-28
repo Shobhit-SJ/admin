@@ -1,0 +1,16 @@
+<h1>register works!</h1>
+
+<br>
+<br>
+<div class="register-container">
+    <h1>Create Account</h1>
+    <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+      <input type="text" placeholder="Username" required ngModel name="username">
+      <input type="email" placeholder="Email" required ngModel name="email">
+      <input type="password" placeholder="Password" required ngModel name="password">
+      <button type="submit" (click)="navigateTologin()">Register</button>
+    </form>
+  </div>
+
+  <a routerLink="/register"></a>
+  <router-outlet></router-outlet>

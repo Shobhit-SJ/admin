@@ -1,0 +1,12 @@
+<p>bank-accounts works!</p>
+
+<h1> Bank Accounts Detail </h1>
+
+<div *ngFor="let Detail of accountDetails" ngClass="{{Detail.accIsActive ? 'greenDiv' : 'redDiv'}}">
+    <h6>Name: {{Detail.accNo}}</h6>
+     <h6>Last NAME: {{Detail.accName}}</h6>
+     <h6>age: {{Detail.accType}}</h6>
+     <h6>Balance: {{Detail.Balance}}</h6>
+     <h6>Account Active: {{Detail.accIsActive}}</h6>
+     <hr/>
+</div>

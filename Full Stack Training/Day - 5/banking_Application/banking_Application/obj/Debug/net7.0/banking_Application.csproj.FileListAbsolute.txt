@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 5\banking_Application\banking_Application\bin\Debug\net7.0\banking_Application.exe
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 5\banking_Application\banking_Application\bin\Debug\net7.0\banking_Application.deps.json
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 5\banking_Application\banking_Application\bin\Debug\net7.0\banking_Application.runtimeconfig.json
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 5\banking_Application\banking_Application\bin\Debug\net7.0\banking_Application.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 5\banking_Application\banking_Application\bin\Debug\net7.0\banking_Application.pdb
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 5\banking_Application\banking_Application\obj\Debug\net7.0\banking_Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 5\banking_Application\banking_Application\obj\Debug\net7.0\banking_Application.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 5\banking_Application\banking_Application\obj\Debug\net7.0\banking_Application.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 5\banking_Application\banking_Application\obj\Debug\net7.0\banking_Application.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 5\banking_Application\banking_Application\obj\Debug\net7.0\banking_Application.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 5\banking_Application\banking_Application\obj\Debug\net7.0\refint\banking_Application.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 5\banking_Application\banking_Application\obj\Debug\net7.0\banking_Application.pdb
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 5\banking_Application\banking_Application\obj\Debug\net7.0\banking_Application.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 5\banking_Application\banking_Application\obj\Debug\net7.0\ref\banking_Application.dll

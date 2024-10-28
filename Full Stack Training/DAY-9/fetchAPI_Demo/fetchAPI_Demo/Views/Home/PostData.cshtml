@@ -1,0 +1,42 @@
+﻿<h3> Post Data</h3>
+
+<button class="btn btn-primary" onclick="getPostData()">Display Post</button>
+
+
+<table class="table table-bordered"></table>
+
+
+@* fetct api call *@
+
+<script>
+
+    function getPostData() {
+
+        var url = "https://jsonplaceholder.typicode.com/posts";
+        // fetch returns you a promise, it will either show you a data or display error in 20 sec.
+        fetch(url).then(datatype => datatype.json()) /// this then when u want post the data
+            .then(result => { /// this then make a call
+                // alert('Success');
+                // console.log(result);
+
+                for (var i = 0; i < result.length; i++) {
+                    $("table").append("<tr><td>" + result[i].id + "</td><td>"
+                        + result[i].userId + "</td><td>"
+                        + result[i].title + "</td><td>"
+                        + result[i].body + "</td><tr>" )
+                }
+
+            })
+            .catch(errDetailss => {
+                alert('Errorrrrr !!');
+                console.log(errDetailss);
+            })
+
+
+    }
+
+
+
+
+
+</script>

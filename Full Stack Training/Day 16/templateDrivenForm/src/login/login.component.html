@@ -1,0 +1,18 @@
+<h1>User Login</h1>
+
+
+<form #loginInfo="ngForm" (ngSubmit)="loginUser(loginInfo)">
+
+    <label >Username</label>
+    <input type="text" name="username" ngModel/>
+    <br>
+
+    <label >Password</label>
+    <input type="password" name="password" ngModel>
+    <br>
+
+    <button type="submit">Login</button>
+
+</form>
+
+<h1 ngClass="{{result[6]== 'S' ? 'greenDiv' : 'redDiv'}}">{{result}}</h1>

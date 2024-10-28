@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\FileIO_Operations\FileIO_Operations\bin\Debug\net7.0\FileIO_Operations.exe
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\FileIO_Operations\FileIO_Operations\bin\Debug\net7.0\FileIO_Operations.deps.json
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\FileIO_Operations\FileIO_Operations\bin\Debug\net7.0\FileIO_Operations.runtimeconfig.json
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\FileIO_Operations\FileIO_Operations\bin\Debug\net7.0\FileIO_Operations.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\FileIO_Operations\FileIO_Operations\bin\Debug\net7.0\FileIO_Operations.pdb
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\FileIO_Operations\FileIO_Operations\obj\Debug\net7.0\FileIO_Operations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\FileIO_Operations\FileIO_Operations\obj\Debug\net7.0\FileIO_Operations.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\FileIO_Operations\FileIO_Operations\obj\Debug\net7.0\FileIO_Operations.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\FileIO_Operations\FileIO_Operations\obj\Debug\net7.0\FileIO_Operations.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\FileIO_Operations\FileIO_Operations\obj\Debug\net7.0\FileIO_Operations.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\FileIO_Operations\FileIO_Operations\obj\Debug\net7.0\refint\FileIO_Operations.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\FileIO_Operations\FileIO_Operations\obj\Debug\net7.0\FileIO_Operations.pdb
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\FileIO_Operations\FileIO_Operations\obj\Debug\net7.0\FileIO_Operations.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\FileIO_Operations\FileIO_Operations\obj\Debug\net7.0\ref\FileIO_Operations.dll

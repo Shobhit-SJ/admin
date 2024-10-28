@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Shobhit_week2_webAPI.props" />
+</Project>

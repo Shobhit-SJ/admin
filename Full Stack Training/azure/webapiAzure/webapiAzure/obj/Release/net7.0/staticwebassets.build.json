@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "D9AtHMjNZkHnqsywwl/BeHfwbv4SguUifohgpBpC7t0=",
+  "Source": "webapiAzure",
+  "BasePath": "_content/webapiAzure",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,45 @@
+Topic : CORS - Cross Origin Reource Sharing
+
+Try 
+
+
+1. Ope the rest API application from day8 - Productsapi
+         run the application, test on swagger, you should able to get data which is coming from databse
+
+2. Create new ASP.Net MVC application -CORS_demo
+
+3. using fetch api, make call to your own rest api url (from step 1)
+
+
+
+
+
+
+1. Website try to get data from another website and display it on their website as if it is their own data.
+
+this is not allowed by default, due to security reasons
+
+
+developers have to enable to safe for clients and apps
+
+in our webAPI, we have below controller which allows CRUD operations
+
+productsController
+        GetAllProducts -- this should be alllowed for access for customers
+        PostProduct -- this is allowed to sellers only
+        PutProduct -- this is allowed to seller onluy
+        Delteproduct-- this os allowed to seller only
+        SearchProduct -- this is allowed to customers
+
+ordersController
+        GetAllOwner -- only adminProfile is Allowed
+        dispatchOrder -- admin and deliveryProfile
+
+we need to create CORS policy in WEBAPI
+
+
+******************  STEPS: ************************
+
+1. in webAPI applicationm install nuget package Microsoft.ASPnetcore.WebAPI.Cors
+2. in program.cs, we will create 
+

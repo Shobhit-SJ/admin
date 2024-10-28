@@ -1,0 +1,69 @@
+-- ANgular is a clietn centric web development framework by google
+-- very famous for creating SPA appilication (index.html)
+        single paged appilication
+
+--is made up of
+            HTML, CSS and TypeScript
+            typeScript is absed on ECMA Scricpt Standards - ES6
+            typeScript is OOPs based JavaScript
+-- it uses a design pattern - component based development
+    we create components for everyhthing, header section, home, about, contact, footer, etc..
+components are reusable piece of code
+
+
+it runs on nodejs server (develop using vs code, build, test and run on node server)
+-------------------------------------------------------------------------------------------
+     Installation and setup:
+               1. Install node from nodejs.org
+                        after install test the version if node and npm
+                        node --version
+                        npm --version
+                        npm = node package manager (here everyhting is command based)
+               2. install Angular using npm
+                    npm install -g @angular/cli
+                    ng --version
+
+
+
+               3.go to folder where you want your application then use command 
+                                                      ng new shoppingapp         
+                                    then ---> CS---->No
+
+               4. ng serve 
+
+
+tip: in src you create components
+
+tip: ctrl + ` --> terminal
+
+
+b
+
+ANgular is all about components
+     component = .html + .css +.ts file
+     eg. Home Component
+              home.component.html (tags)
+              home.component.css (styles)
+              home.component.ts (OOPs)
+
+
+in src ng g c home (speak as ng generate component home)
+
+
+
+
+                                DATA MANAGEMENT IN ANGULAR
+
+           there are 4 types of data to be managed in angular
+          1. Primitive data types : string, number, bool, etc.....
+          2. Primitve data Array : array of string, array numbers, etc....
+          3. Object - json objects - key and value pair
+          4. JSON object array [{},{},{},{}]
+
+
+
+
+
+
+
+

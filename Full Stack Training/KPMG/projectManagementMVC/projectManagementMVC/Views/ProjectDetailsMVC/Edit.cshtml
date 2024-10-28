@@ -1,0 +1,59 @@
+﻿@model projectManagementMVC.Models.ProjectDetail
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>ProjectDetail</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ProjectId" />
+            <div class="form-group">
+                <label asp-for="ProjectName" class="control-label"></label>
+                <input asp-for="ProjectName" class="form-control" />
+                <span asp-validation-for="ProjectName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectDomain" class="control-label"></label>
+                <input asp-for="ProjectDomain" class="form-control" />
+                <span asp-validation-for="ProjectDomain" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectHead" class="control-label"></label>
+                <input asp-for="ProjectHead" class="form-control" />
+                <span asp-validation-for="ProjectHead" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectLead" class="control-label"></label>
+                <input asp-for="ProjectLead" class="form-control" />
+                <span asp-validation-for="ProjectLead" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectPrice" class="control-label"></label>
+                <input asp-for="ProjectPrice" class="form-control" />
+                <span asp-validation-for="ProjectPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProjectStatus" class="control-label"></label>
+                <input asp-for="ProjectStatus" class="form-control" />
+                <span asp-validation-for="ProjectStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

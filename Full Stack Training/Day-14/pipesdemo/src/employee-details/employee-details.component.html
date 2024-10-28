@@ -1,0 +1,31 @@
+<p>employee-details works!</p>
+
+
+
+<div>
+    <h2>{{empNo}}</h2>
+    <h2>{{empName | uppercase}}</h2>
+    <h2>{{empSalary|currency:'INR' : false}}</h2> <!-- BY DEFAULT IT IS DOLLARS -->
+    <h2>{{empIsPermanent}}</h2>
+    <h2>{{empDOB| date: 'fullDate'}}</h2>
+</div>
+
+<hr/>
+
+
+<h3>
+    {{ employeeInfo| json}}
+</h3>
+
+<table border ="1">
+    <tr *ngFor="let emp of employeeInfo" >
+        <td>{{emp.empNo}}</td>
+        <td>{{emp.empName| genderpipe: emp.empGender|uppercase}} {{emp.empLastName|uppercase}}</td>
+        <td></td>
+        <td>{{emp.empSalary|currency: 'INR'}}</td>
+        <td>{{emp.empIsPermanent}}</td>
+        <td>{{emp.empDOB|date:'fullDate'}}</td>
+        <td>{{emp.empSalary | salaryStandard}}</td>
+
+    </tr>
+</table>

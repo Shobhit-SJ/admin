@@ -1,0 +1,34 @@
+﻿<h1>Enter Product Id</h1>
+
+<input onblur="getProduct()" type="number" placeholder="Product Id 1 to 20" class="form-control" id="txtPId"/>
+<div id="resultDiv" style="background-color: gold"></div>
+<h3 style="color: red" id="errMessage"></h3>
+
+<script>
+
+    function getProduct() 
+    {
+        var Id = $("#txtPId").val();
+        var url = "https://fakestoreapi.com/products/" + Id;
+
+        fetch(url).then(responseType => responseType.json())
+            .then(product => {
+                $("#resultDiv").append("<h1>" + product.id + "</h1>" +
+                    "<h5>" + product.title + "</h5>" +
+                    "<h5>" + product.category + "</h5>" +
+                    "<h5>" + product.price + "</h5>" +
+                    "<h5>" + (product.price * 0.9) + "</h5>" +
+                    "<h5>" + product.rating.rate + "</h5>" +
+                    "<img src='" + product.image + "' width=200px height=200px/>" 
+                
+                )
+                    
+            })
+            .catch(err => {
+                document.getElementById("errMessage").innerHTML = err;
+             
+            })
+
+    }
+
+</script>

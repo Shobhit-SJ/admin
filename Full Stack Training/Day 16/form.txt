@@ -1,0 +1,8 @@
+2 types
+
+
+a. template driven form(html based, loosely typed and sinmple to use )
+b. Model driven form (they are model based (class) and properties are tied to controls)
+
+
+--------------------------------------------------------------------------------------------------

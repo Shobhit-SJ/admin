@@ -1,0 +1,15 @@
+.mylink
+{
+    color:blue;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: large;
+}
+
+.mylink:hover
+{
+    color:rgb(240, 23, 175);
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: large;
+}

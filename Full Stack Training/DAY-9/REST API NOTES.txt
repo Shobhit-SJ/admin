@@ -1,0 +1,117 @@
+******************************************************DAY - 9***************************************************************
+
+
+
+ASP.NET MVC
+REST API
+
+
+1.Design, develop and test a rest API appilication(done yesterday)
+2. Consume REST API in frontend application (MVC, ANGULAR, REACT, CONSOLE APP ETC.)
+
+
+To consume the rest API , there are 2 approach
+a. client side call using JavaScript - fetch method
+     this is fastest way to communicate, but less secure
+
+ do not use fetch for users personal data, sensitive data
+data which involves passwords, credit card details, etc....
+ bank, unsurance, flights, tickets, etc.... not a good idea
+
+
+
+use it for open data, eg Zomato, cricket score, flight schedule
+
+
+
+b. server side call using HttpClient little slow for slow internet
+but very secure and safe
+use it for sensitive data, or personal data, bank information.
+
+
+
+
+
+
+
+1. open asp.net mvc appilication on visual studio
+2.go to homecontroller.cs and add method iAction PostData(){return view;}
+3. RIGHT CLICK ON PostData select and  view with same name as PostData
+4.open PostData.cshtml in view --> home
+and make basic structure(format like below)
+
+<h3> Post Data</h3>
+
+<button class="btn btn-primary" onclick="getPostData()">Display Post</button>
+
+
+<table class="table table-bordered"></table>
+
+
+@* fetct api call *@
+
+<script>
+
+    function getPostData() {
+
+        var url = "https://jsonplaceholder.typicode.com/posts";
+        // fetch returns you a promise, it will either show you a data or display error in 20 sec.
+        fetch(url).then(datatype => datatype.json()) /// this then when u want post the data
+            .then(result => { /// this then make a call
+              //  alert('Success');  // to check if everything is correct or not
+               // console.log(result);
+                for (var i = 0; i < result.length; i++) {  // to get data in form of table
+                          $("table").append("<tr><td>" + result[i].id + "</td><td>"
+                             + result[i].userId + "</td><td>"
+                             + result[i].title + "</td><td>"
+                             + result[i].body + "</td><tr>" )
+}
+
+
+
+
+
+
+            })
+            .catch(errDetails => {
+                alert('Errorrrrr !!');
+                console.log(errDetails);
+            })
+
+
+    }
+
+
+
+
+
+</script>
+
+
+5. go to layout.cshtml in shared folder
+add this : 
+ <li class="nav-item">
+     <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="PostData">User Post</a>
+ </li>
+
+6. run
+
+
+
+
+
+
+https://fakestoreapi.com/
+json placeholder
+
+
+
+
+
+
+
+1. create a new class, with properties of data coming to application, with all the properties which will come from call
+2. create a variable to capture the data (it could be primitive data type, single object or array/list)
+3. 
+
+

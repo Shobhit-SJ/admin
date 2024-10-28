@@ -1,0 +1,41 @@
+﻿<h1>Diasplay All User</h1>
+
+<button onclick="getUser()"  class="btn btn-primary" >ALL User</button> 
+<table style="background-color: gold" class="table table-bordered" id="tblptoducts" "></table>
+
+@* <div id="resultDiv" style="background-color: gold"></div>
+ *@
+ <h3 style="color: red" id="errMessage"></h3>
+
+<script>
+
+    function getUser() {
+        // var Id = $("#txtPId").val();
+        var url = "https://jsonplaceholder.typicode.com/users";
+
+        fetch(url).then(dataType => dataType.json())
+            .then(result => {
+                for (var i = 0; result.length; i++) {
+
+                    $("#tblptoducts").append("<tr><td>"
+                        +  result[i].id + "</td><td>" +
+                        result[i].name + "</td><td>" +
+                        result[i].username + "</td><td>" +
+                        result[i].email + "</td><td>" +
+                        result[i].address.city + "</td><td>" +
+                        result[i].address.geo.lat + "</td><td>" +
+                        result[i].address.geo.lng + "</td><td>" +
+                        result[i].company.name + "</td><td>" +
+                        result[i].company.catchPhrase + "</td></tr>")
+
+                }
+
+            })
+            .catch(err => {
+                document.getElementById("errMessage").innerHTML = err;
+
+            })
+
+    }
+
+</script>

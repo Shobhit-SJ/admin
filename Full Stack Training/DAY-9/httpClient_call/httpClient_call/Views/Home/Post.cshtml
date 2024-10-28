@@ -1,0 +1,23 @@
+﻿<h1 style="text-align:center"> User Post</h1>
+@* <table>@foreach (var item in ViewBag.postData)
+    {
+        <tr>
+            <td> @item.id </td>
+            <td> @item.userId </td>
+            <td> @item.title </td>
+            <td> @item.body </td>
+        </tr>
+    }
+
+</table> *@
+
+
+@foreach (var item in ViewBag.postData)
+{
+    <div style="background-color: hotpink">
+        <h5> Post Id : @item.id</h5>
+        <h5> User Id : @item.userId</h5>
+        <h5> Tile : @item.title</h5>
+        <h5> Body : @item.body</h5>
+    </div>
+}

@@ -1,0 +1,14 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP.NET Core service.
+
+version: '3.4'
+
+services:
+  firstmicroserviceshobhit:
+    image: firstmicroserviceshobhit
+    build:
+      context: .
+      dockerfile: firstmicroservice_shobhit/Dockerfile
+      args:
+        - configuration=Debug
+    volumes:
+      - ~/.vsdbg:c:\remote_debugger:rw

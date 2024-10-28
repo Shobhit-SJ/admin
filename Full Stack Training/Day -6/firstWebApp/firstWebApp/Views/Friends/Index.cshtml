@@ -1,0 +1,59 @@
+﻿@model IEnumerable<firstWebApp.ModelS.Friend>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FriendName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FriendMobile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FriendEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FriendType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SeriousFriend)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FriendName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FriendMobile)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FriendEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FriendType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SeriousFriend)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FriendId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FriendId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FriendId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,63 @@
+Step to dockerize the ng application 
+
+1. after successfully testing the angular app on browser locally, 
+	stop the server Cntrl + C + C
+2. fire a command 
+	npm install nginx
+	ng build
+
+3. add a docker file (Control + Shift + P)
+	Node
+	myprofile/package.json
+	remove the port
+	yes to add default docker compose file
+4. remove all the content from dockerfile (this are for the older version)
+	FROM node:18.13.0 as build
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+RUN npm install -g @angular/cli
+COPY . .
+FROM nginx:latest
+COPY --from=build app/dist/my-profile/browser /usr/share/nginx/html
+EXPOSE 80
+
+5. in the 2nd last line, make sure sure the below value is correct
+	
+COPY --from=build app/dist/same as folder name inside dist folder in your app/browser /usr/share/nginx/html
+
+
+same as folder name inside dist folder in your app = case scencetive
+
+
+----
+docker build and test in container
+create a tag
+push to docker hub
+
+
+
+
+
+-------------------------
+for web api
+
+
+
+Create WEBAPI and add it in dockers.
+
+1. create folder open in vscode. ---> use command in terminal(dotnet new webapi --name dockerwebapi)
+2. create 2 more folder inside the main folder as models,controller.
+3. inside the model create product.cs file and inside the controller create productcontroller.cs file add the code -----> add 2 lines in program.cs
+4. use command(dotnet run)
+5. copy the localhost url and run with/swagger/index.html
+
+6. docker login in terminal.
+7. ctrl+shift+p select all things.
+8. copy the docker file and paste it in main folder. do little changes in docker file
+9. cd ..  ----->   docker build -t productwork . 
+10. check in command prompt ->  docker images.
+11. docker tag 4f8c8a3d378f chandanamuttur/productwork
+12. docker push chandanamuttur/productwork
+13. goto brwoser docker.hub you can check that you image is pushed .

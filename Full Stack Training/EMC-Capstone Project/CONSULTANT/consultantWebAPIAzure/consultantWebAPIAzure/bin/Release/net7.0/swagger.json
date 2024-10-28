@@ -1,0 +1,443 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "consultantWebAPIAzure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Consultants": {
+      "get": {
+        "tags": [
+          "Consultants"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Consultant"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Consultants"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Consultant"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Consultant"
+            }
+          }
+        }
+      }
+    },
+    "/api/Consultants/{id}": {
+      "get": {
+        "tags": [
+          "Consultants"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Consultant"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Consultants"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Consultant"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Consultants"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/WeatherForecast"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "AdminAction": {
+      "type": "object",
+      "properties": {
+        "actionId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "adminId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "actionType": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "timestamp": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "admin": {
+          "$ref": "#/definitions/User"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Appointment": {
+      "type": "object",
+      "properties": {
+        "appointmentId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "consultantId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "clientId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "scheduledTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "createdAt": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "client": {
+          "$ref": "#/definitions/Client"
+        },
+        "consultant": {
+          "$ref": "#/definitions/Consultant"
+        },
+        "feedbacks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Feedback"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Client": {
+      "type": "object",
+      "properties": {
+        "clientId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "walletBalance": {
+          "format": "double",
+          "type": "number"
+        },
+        "createdAt": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "appointments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Appointment"
+          }
+        },
+        "user": {
+          "$ref": "#/definitions/User"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Consultant": {
+      "type": "object",
+      "properties": {
+        "consultantId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "profileInfo": {
+          "type": "string"
+        },
+        "rating": {
+          "format": "double",
+          "type": "number"
+        },
+        "totalProjects": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "createdAt": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "appointments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Appointment"
+          }
+        },
+        "performanceTrackers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PerformanceTracker"
+          }
+        },
+        "user": {
+          "$ref": "#/definitions/User"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Feedback": {
+      "type": "object",
+      "properties": {
+        "feedbackId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "appointmentId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "rating": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "comments": {
+          "type": "string"
+        },
+        "createdAt": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "appointment": {
+          "$ref": "#/definitions/Appointment"
+        }
+      },
+      "additionalProperties": false
+    },
+    "PerformanceTracker": {
+      "type": "object",
+      "properties": {
+        "trackerId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "consultantId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "completedProjects": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "averageRating": {
+          "format": "double",
+          "type": "number"
+        },
+        "createdAt": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "consultant": {
+          "$ref": "#/definitions/Consultant"
+        }
+      },
+      "additionalProperties": false
+    },
+    "User": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userName": {
+          "type": "string"
+        },
+        "phoneNum": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "userEmailId": {
+          "type": "string"
+        },
+        "userPassword": {
+          "type": "string"
+        },
+        "userRole": {
+          "type": "string"
+        },
+        "createdAt": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "updatedAt": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "adminActions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AdminAction"
+          }
+        },
+        "clients": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Client"
+          }
+        },
+        "consultants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Consultant"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "WeatherForecast": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "format": "date",
+          "type": "string"
+        },
+        "temperatureC": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "temperatureF": {
+          "format": "int32",
+          "type": "integer",
+          "readOnly": true
+        },
+        "summary": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

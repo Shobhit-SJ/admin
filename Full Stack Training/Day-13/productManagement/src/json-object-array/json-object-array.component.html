@@ -1,0 +1,12 @@
+<h1>json-object-array works!</h1>
+<table border="1">
+    <tr *ngFor="let product of productList">
+        <td>{{product.pId}}</td>
+        <td>{{product.pName}}</td>
+        <td>{{product.pPrice}}</td>
+        <td>{{product.pCategory}}</td>
+        <td>{{product.pDescription}}</td>
+        <td><img src={{product.pImage}} alt="" style="width: 20px;height: 20px;"></td>
+    
+    </tr>
+</table>

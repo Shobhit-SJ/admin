@@ -1,0 +1,172 @@
+
+
+commands to connect sql to azure in webapi and mvc app
+
+Scaffold-DbContext "Server=tcp:shobhitbankingserver.database.windows.net,1433;Initial Catalog=College;Persist Security Info=False;User ID=myproject;Password=Shobhitjaiswal@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" -Provider Microsoft.EntityFrameworkCore.Sql Server -OutputDir Models
+
+
+									Cloud Introduction
+
+		Azure cloud fundamentals (40% of cloud - 60% of azure cloud) - AZ900
+
+A cloud is a place where u can find all the IT services eg. VM(compute), Databases, IOT, AI, ML, Data Services, Networks, Security 200+ such services.
+
+some major providers -	Microsoft
+		-	Amazon
+		-	Google
+		- 	IBM
+		-	HP
+		-	Oracle
+
+Types of cloud: public - Available to public via subscriptions (Credit card),
+		private - Dedicated hw/service Available only to organization,
+ 		Hybrid - mix of both
+		Community - Shared only by community members. Only available to community like banks, insurance, travel etc..
+
+
+types of cloud services: SAAS - Software as a service- buy the software service like software for dataanalystics,IOT operations,
+					 AI,ML,Compute programming Functions app, Logic app event grid etc..,
+			 PAAS - Run your software on their hardware. services like App services,
+			 IAAS
+
+
+
+
+Azure fundamentals wil cover here. it provide 200+ services some are here.
+
+VM(compute)
+
+
+SQL server (PAAS and SAAS)   
+		steps: first search sql -> select sql server -> give server name -> change Authentication method to Use SQL authentication
+			 then given Server admin login and password
+		search for networking -> change public network to enable -> down side u will get checkbox just click then save 
+		 now open sql server use all creditentail use the username, servername, password  which u have given in the vm 
+			and authentication to sql server authentication. start working with sql server
+
+	sql- create server- gives u more control (SAAS) - extra cost
+	sql - dstsbase - less costly - less control 
+
+
+
+Storage service 
+	Storage Account (consider this as a harddrive) it has 4 sub services
+		a. Containers - like a drive- which can have many folders sub folders and then files in it (eg img or pdf file, video file)
+		b. Drive - this is like a shared folder over internet.
+		c. table -  a single table - mix of sql NoSQL
+		d. blob - large objects - used for backups (10Gb to 100TB files) store it at a very cheap rate.
+	2 categories of storage services
+			a. Hot storage (for frequently used data) - high performance - where data can be access multiple times in a day continuous usage.
+			b. Cold storage (for old data -less data) - low cost eg. 10 years old data-which is used to store data and access like yearly once.
+							insurance company can use combination of both.
+
+	Storage ACC V1 and v2
+			V1 - just store the data and access it.
+			V2 - also called as datalake
+                                for all the data, stored
+                         json, xml file, excel file, images, videos, etc...
+
+                         service will read the data(content) and metadata from files
+
+                         and create an index for faster searching
+
+                            (costlier than v1)
+
+
+container in blob azure is just like our c drive d drive e drive in our my computer..
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+                             admin will create a storage service on portal
+ 
+                         and users , will use connect the service with a tool called azure storage explorer.
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+CosmoDB (NO SQL database - mongoDB)
+
+
+
+               cosmodb - service
+this is a blanket service of open setvice platform consiting of
+   Mongo DB
+   GraphQL
+   pOSTGres- combination of sql and no sql
+   tablue
+
+------------------------------------------------
+SQL               NoSql
+SQL SERVER        MongoDB
+Table             Collection
+rows/ column      document
+sql queries       javascript functions
+
+
+
+
+
+
+APP Services (hosting web contents) - WEBAPI, rest, ASP.net mvc, Angular, mobile.
+ACR(azure container registery) - host ur images here
+AKS (azure kubernetes services) prod env for images
+Logic App -  UI based business login app - used in most of the projects
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+***************************************   Azure Devops ****************************************************
+
+
+1.Create Pipelines
+       
+           CI - continuous integration - integrate new changes in the previous build
+           CD - continuous Deployment - integrate new changes in production (pick up from CI)
+
+
+
+2. Configure Agile Methodology for dvelopers,
+              which will now also include operations, clients, user
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+Virtual Machine::
+		Resource Groups: OS
+				RAM
+				Network
+				Firewall
+
+to create any service in azure, u need resource group.
+resource group: this is a handle for mutiple resource clubbing under 1 roof u apply security on RG it gets applied on all the resource under it.
+Region - (location of data center) where do u want to host ur resources.
+
+
+Create a first reource - VM 
+
+ways to create 	1: By using azure portal - i need to have portal username and password
+		2: run scripts (powershell scripts)
+			open command prompt
+			az login
+		3: If we want to create multiple machines (20 machines)\
+			ARM templates in a loop
+			Azure Resource Manger templates(JSON based files)
+		4: Devops for 2 and 3
+
+
+
+
+
+Server=tcp:chandanasm.database.windows.net,1433;Initial Catalog=Myproject;Persist Security Info=False;User ID=myproject;Password={Chandana@123};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
+Scaffold-DbContext "Server=tcp:chandanasm.database.windows.net,1433;Initial Catalog=Myproject;Persist Security Info=False;User ID=myproject;Password=Chandana@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" -Provider Microsoft.EntityFrameworkCore.Sql Server -OutputDir Models

@@ -1,0 +1,37 @@
+﻿<h3>Products</h3>
+
+<button class="btn btn-primary" onclick="getCustomers()">Display Customers</button>
+
+
+<table class="table table-bordered" id="tblptoducts" "></table>
+
+<script>
+
+    function getCustomers()
+    {
+        var url = "https://localhost:7057/api/Customers";
+
+        fetch(url).then(datatype => datatype.json())
+            .then(result => {
+                // alert('Success');
+                // console.log(result);
+
+
+                for (var i = 0; result.length; i++) {
+
+                    $("#tblptoducts").append("<tr><td>"
+                        +  result[i].id + "</td><td>" +
+                        result[i].cId + "</td><td>" +
+                        result[i].cName + "</td><td>" +
+                        result[i].cBalance + "</td><td>" +
+                        result[i].cAddress + "</td></tr>")
+
+                }
+            })
+            .catch(errDetails => {
+              //  alert('ERRORRRRRRRR !!!');
+                console.log(errDetails);
+            })
+
+    }
+</script>

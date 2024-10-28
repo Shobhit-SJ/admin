@@ -1,0 +1,15 @@
+<h1>apidata works!</h1>
+
+
+
+
+
+<button (click)="restpdata.getOwnProductdetail()">Show Users</button>
+
+<div *ngFor="let u of restpdata.pData">
+    <h3> ID: {{u.cId}} </h3>
+    <h3> Name: {{u.cName}} </h3>
+    <h3> Balance: {{u.cBalance}} </h3>
+    <h3> Address: {{u.cAddress}} </h3>
+    
+</div>

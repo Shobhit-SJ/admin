@@ -1,0 +1,41 @@
+<p>addapidata works!</p>
+<h1>apidata works!</h1>
+
+
+
+
+
+<!-- <button (click)="restpdata.addownProductdetail()">Add Users</button>
+<button (click)="restpdata.delPdata()">delete</button>
+<button (click)="restpdata.updateData()">update</button>
+<button (click)="restpdata.searchOwnProductdetail()">search</button> -->
+
+<!-- <div >
+    <h3> ID: {{restpdata.searchData.cId}} </h3>
+    <h3> Name: {{restpdata.searchData.cName}} </h3>
+    <h3> Balance: {{restpdata.searchData.cBalance}} </h3>
+    <h3> Address: {{restpdata.searchData.cAddress}} </h3>
+    
+</div> -->
+
+<form #addcustomer="ngForm" (ngSubmit)="restpdata.addownProductdetailFromFORM(addcustomer)">
+
+    <label >Customer Id</label>
+    <input type="number" name="cId" ngModel/>
+    <br>
+
+    <label >Customer Name</label>
+    <input type="text" name="cName" ngModel>
+    <br>
+
+    <label >Customer Balance</label>
+    <input type="number" name="cBalance" ngModel>
+    <br>
+
+    <label >Customer Address</label>
+    <input type="text" name="cAddress" ngModel>
+    <br>
+
+    <button type="submit">ADD</button>
+
+</form>

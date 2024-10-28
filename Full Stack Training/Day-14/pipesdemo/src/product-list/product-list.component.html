@@ -1,0 +1,14 @@
+<h1>product-list table</h1>
+
+<table border ="1">
+    <tr *ngFor="let p of productList" >
+        <td>{{p.pId}}</td>
+        <td>{{p.pName|uppercase}} </td>
+        
+        <td>{{p.pPrice|currency: 'INR'}}</td>
+        <td>{{p.pCategory}}</td>
+        <td>{{p.pIsInStock}}</td>
+        <td>{{p.pPrice | discount: p.pCategory|currency:'INR'}}</td>
+
+    </tr>
+</table>

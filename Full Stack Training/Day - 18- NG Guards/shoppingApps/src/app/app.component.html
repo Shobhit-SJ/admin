@@ -1,0 +1,30 @@
+<h1> My Shopping App </h1>
+
+<table border="1">
+  <tr>
+    <td><a routerLink="/home">Home</a></td>
+    <td><a routerLink="/about">About</a></td>
+    <td><a routerLink="/contact">Contact</a></td>
+    <td><a routerLink="/cart">Cart</a></td>
+
+
+    <td><a routerLink="/orders">Orders</a></td>
+    <td *ngIf="_authorizeruser.loginResult; else logoutblock">
+      <a routerLink="/login" (click)="_authorizeruser.logout()">Logout</a>
+    </td>
+
+
+      <ng-template #logoutblock>
+
+        <a routerLink="/login">Login</a>
+
+      </ng-template>
+      
+    <td><a routerLink="/wallet">Wallet</a></td>
+
+  </tr>
+
+
+</table>
+
+<router-outlet></router-outlet>

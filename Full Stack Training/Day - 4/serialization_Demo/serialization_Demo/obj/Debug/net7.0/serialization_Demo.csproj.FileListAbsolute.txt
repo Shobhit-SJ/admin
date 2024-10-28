@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\serialization_Demo\serialization_Demo\bin\Debug\net7.0\serialization_Demo.exe
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\serialization_Demo\serialization_Demo\bin\Debug\net7.0\serialization_Demo.deps.json
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\serialization_Demo\serialization_Demo\bin\Debug\net7.0\serialization_Demo.runtimeconfig.json
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\serialization_Demo\serialization_Demo\bin\Debug\net7.0\serialization_Demo.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\serialization_Demo\serialization_Demo\bin\Debug\net7.0\serialization_Demo.pdb
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\serialization_Demo\serialization_Demo\obj\Debug\net7.0\serialization_Demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\serialization_Demo\serialization_Demo\obj\Debug\net7.0\serialization_Demo.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\serialization_Demo\serialization_Demo\obj\Debug\net7.0\serialization_Demo.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\serialization_Demo\serialization_Demo\obj\Debug\net7.0\serialization_Demo.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\serialization_Demo\serialization_Demo\obj\Debug\net7.0\serialization_Demo.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\serialization_Demo\serialization_Demo\obj\Debug\net7.0\refint\serialization_Demo.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\serialization_Demo\serialization_Demo\obj\Debug\net7.0\serialization_Demo.pdb
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\serialization_Demo\serialization_Demo\obj\Debug\net7.0\serialization_Demo.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 4\serialization_Demo\serialization_Demo\obj\Debug\net7.0\ref\serialization_Demo.dll

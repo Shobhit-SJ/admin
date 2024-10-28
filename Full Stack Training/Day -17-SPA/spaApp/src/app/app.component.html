@@ -1,0 +1,30 @@
+<!-- <app-about></app-about>
+
+<app-contact></app-contact>
+
+<app-home></app-home>
+
+<app-login></app-login>
+
+<app-register></app-register>
+
+<app-work></app-work> -->
+
+<h1> My Shopping App </h1>
+
+
+<nav>
+  
+  <!-- // these Home, Contact, etc are case sensitive should match with app.route.ts -->
+  
+  <!-- // routerlink is important, if you add href instead of routerlink then page will refresh again again but in routerLink you cab=n switch to different component without refresh -->
+  <!-- make sure to add RouterModule IN app.component.ts file -->
+                 
+  <a class="mylink" routerLink="/Contact"> Contact </a>
+  <a class="mylink" routerLink="/About"> About </a>
+  <a class="mylink" routerLink="/Work"> Careers </a>
+  <a class="mylink" routerLink="/Login"> Login </a>
+  <a class="mylink" routerLink="/Register"> Register </a>
+</nav>
+
+<router-outlet></router-outlet>

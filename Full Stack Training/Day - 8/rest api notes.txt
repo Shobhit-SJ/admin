@@ -1,0 +1,51 @@
+                                                           Web module
+
+                                                          ASP.Net MVC
+                                                          Entity framework to connect to sql server
+   
+                                                            REST API
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+1. select c# and web api
+
+2. in package manager first we have t install : 1. tools 2. design 3. core 4. sqlserver (install in same manner its mandatory)
+
+3. in tools--> project manger console put this command --> Scaffold-DbContext "server=5F8CC5A69AAE530; database=productAPIDB; integrated security=true;TrustServerCertificate=true" -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+4. add controller (right click on controller click on add option) --> click on api on left side --> select API controller using actions, using enity framework --> select model class(productlist productapi.models) and DbcontextClass (productapidbcontext productapi.models) and give controler name (productcontroller)
+
+5. edit productController.cs -->initiate new obect of dbcontsxt (line 16  _context = new ProductApidbContext(); )   and comment constructor line  18 19 20 21
+
+
+
+REST API works on web protocol (W3C -world wibe web consortiom - world body for web management) -- HTTP
+                   HTTP  recognises verbs for performing various actions
+
+                   actions are performed by user - using browser
+
+                  verbs are:
+                   HTTPGET - WHEN USER WANT TO GET CONTENT FROM SERVER
+                                  (page, img, video, data, etc....)
+                  HTTPPOST - when want to post/add/insert new or fresh content on the server
+                             add new product, upload image, file video , etc...
+                  HTTPPUT - WHEN USER WANTS to modify/edit an existing content
+                                 update product price, change the image
+                  HTTPDELETE - WHEN USER wants to delete/ remove from the server
+
+         when the communication will happen
+                                   the server will response back with two infos.
+                                             1. data
+                                             2. HttpStatusCode
+
+
+READ THIS ARTICLE (ERROR  CODE/NAMES) - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+
+
+
+
+
+
+
+
+      

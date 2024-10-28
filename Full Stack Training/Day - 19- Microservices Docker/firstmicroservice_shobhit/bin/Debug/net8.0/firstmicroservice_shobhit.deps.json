@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "firstmicroservice_shobhit/1.0.0": {
+        "runtime": {
+          "firstmicroservice_shobhit.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "firstmicroservice_shobhit/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\OOPs\OOPs\bin\Debug\net7.0\OOPs.exe
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\OOPs\OOPs\bin\Debug\net7.0\OOPs.deps.json
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\OOPs\OOPs\bin\Debug\net7.0\OOPs.runtimeconfig.json
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\OOPs\OOPs\bin\Debug\net7.0\OOPs.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\OOPs\OOPs\bin\Debug\net7.0\OOPs.pdb
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\OOPs\OOPs\obj\Debug\net7.0\OOPs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\OOPs\OOPs\obj\Debug\net7.0\OOPs.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\OOPs\OOPs\obj\Debug\net7.0\OOPs.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\OOPs\OOPs\obj\Debug\net7.0\OOPs.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\OOPs\OOPs\obj\Debug\net7.0\OOPs.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\OOPs\OOPs\obj\Debug\net7.0\refint\OOPs.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\OOPs\OOPs\obj\Debug\net7.0\OOPs.pdb
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\OOPs\OOPs\obj\Debug\net7.0\OOPs.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\OOPs\OOPs\obj\Debug\net7.0\ref\OOPs.dll

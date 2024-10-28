@@ -1,0 +1,27 @@
+ther er aree 2 typs of  pipes:
+1: Inbuilt types- provided by angular
+
+2: Custom Pipes - created by developers
+
+
+
+refer: Angular API Pipes WEBsite
+
+
+-------------------------------------------------------------------------------------------------
+tip: stop the servr (by enter cls in command promt)
+
+
+-----------------------------------------------------------------------------------------------
+1.components
+2.pipes
+3. Services(this is used for communiucation between components)
+             when 2 or more components wants to work on same data
+             eg: empDeatils
+               1. component is to display the data
+               2. component is to add data
+               3. 1 commit to delete
+               4. search
+             etc....
+services collects datad from REST API calls and distributes the data
+

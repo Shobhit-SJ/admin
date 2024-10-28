@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\bankingApp\bankingApp\bin\Debug\net7.0\bankingApp.exe
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\bankingApp\bankingApp\bin\Debug\net7.0\bankingApp.deps.json
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\bankingApp\bankingApp\bin\Debug\net7.0\bankingApp.runtimeconfig.json
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\bankingApp\bankingApp\bin\Debug\net7.0\bankingApp.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\bankingApp\bankingApp\bin\Debug\net7.0\bankingApp.pdb
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\bankingApp\bankingApp\obj\Debug\net7.0\bankingApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\bankingApp\bankingApp\obj\Debug\net7.0\bankingApp.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\bankingApp\bankingApp\obj\Debug\net7.0\bankingApp.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\bankingApp\bankingApp\obj\Debug\net7.0\bankingApp.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\bankingApp\bankingApp\obj\Debug\net7.0\bankingApp.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\bankingApp\bankingApp\obj\Debug\net7.0\refint\bankingApp.dll
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\bankingApp\bankingApp\obj\Debug\net7.0\bankingApp.pdb
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\bankingApp\bankingApp\obj\Debug\net7.0\bankingApp.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Full Stack Training\Day - 3\oops\bankingApp\bankingApp\obj\Debug\net7.0\ref\bankingApp.dll

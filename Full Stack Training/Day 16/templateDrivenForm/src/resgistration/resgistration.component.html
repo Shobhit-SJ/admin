@@ -1,0 +1,43 @@
+<!-- <p>resgistration works!</p> -->
+<h1> Resgister new User</h1>
+
+ <form #newUserInfo="ngForm" (ngSubmit)="registerUser(newUserInfo)">   
+    <!-- //when you want to give name use #.......when you want use like if else swtich for etc use * -->
+    <label for="username"> Username</label>
+    <input type="text" name="username" ngModel required>
+    
+    <br>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" ngModel required>
+    <br>
+
+    <label for="password">Password</label>
+    <input type="password" name="password" ngModel required>
+    <br>
+
+    <label >Confirm Password</label>
+    <input type="password" name="confirmpassword" ngModel>
+    <br>
+
+    <label >Age</label>
+    <input type="number" name="age" ngModel>
+    <!-- //ngModel is used to club to newUserInfo that y we are give ngmodel in every input -->
+
+    <label >Gender</label>
+    <select name="gender" ngModel>
+        <option value="male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <br>
+
+    <label >City</label>
+    <select name="city" ngModel>
+        <option *ngFor="let city of cities" [value]="city">{{city}}</option>
+    </select>
+
+
+
+    <input type="submit" value="Resgister">
+
+</form>  

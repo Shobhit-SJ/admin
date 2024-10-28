@@ -1,0 +1,14 @@
+<p>comp2 works!</p>
+<h1> Component 1 </h1>
+
+<div>
+    <h3> {{greet.appName}} </h3>
+    <h3> {{greet.teamSize}} </h3>
+    <button (click)="greet.greetUser()">Click here</button>
+    <ul>
+        <li *ngFor="let tech of greet.techList">
+            {{ tech }}
+
+        </li>
+    </ul>
+</div>

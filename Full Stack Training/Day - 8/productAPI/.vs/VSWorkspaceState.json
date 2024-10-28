@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\productAPI",
+    "\\productAPI\\Controllers",
+    "\\productAPI\\Models"
+  ],
+  "SelectedNode": "\\productAPI\\Controllers\\ProductController.cs",
+  "PreviewInSolutionExplorer": false
+}
